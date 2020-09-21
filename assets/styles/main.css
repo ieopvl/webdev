@@ -6,7 +6,7 @@ html {
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   width: 1600px;
 
   font-family: "Roboto", Arial, sans-serif;
@@ -66,6 +66,8 @@ h6 {
 
 .button:hover {
   background-color: #009CC2;
+
+  cursor: pointer;
 }
 
 .layout-2-column {
@@ -216,7 +218,7 @@ h6 {
   transition: scale 1s linear;
 }
 
-.icon:hover {
+.social .icon:hover {
   transform: scale(1.3);
 }
 
@@ -227,4 +229,150 @@ h6 {
 
 .rappresent {
   padding-top: 52px;
+  padding-bottom: 135px;
+}
+
+.community {
+  /*display: flex;*/
+  /*justify-content: center;*/
+  padding-top: 82px;
+  padding-bottom: 118px;
+  background: #F5F6F7;
+
+  overflow-x: hidden;
+}
+
+.community .layout-2-column {
+  justify-content: flex-end;
+}
+
+.community__content {
+  width: 298px;
+  margin-right: 140px;
+  margin-top: 74px;
+  text-align: center;
+}
+.community h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 20px;
+  letter-spacing: 2.4px;
+}
+
+.community img {
+  margin-bottom: 16px;
+}
+
+.section-title_community {
+  margin-bottom: 10px;
+}
+
+.community__content p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 140%;
+}
+
+.slider {
+  max-width: 894px;
+}
+
+.slider-navigation {
+  margin-bottom: 20px;
+}
+
+.slider-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slider-list li {
+  margin-right: 30px;
+}
+
+.slider-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 290px;
+}
+
+.slider-navigation span {
+  margin-right: 15px;
+}
+
+.navigation__arrow {
+  display: block;
+  width: 9px;
+  height: 14px;
+
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.navigation__arrow:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.navigation__arrow-right { background-image: url("../images/arrow-right.png"); }
+.navigation__arrow-left { background-image: url("../images/arrow-left.png"); }
+
+.implement {
+  padding-top: 122px;
+  padding-bottom: 138px;
+}
+
+.implement .layout-2-column {
+  flex-direction: row-reverse;
+}
+
+.implement .content {
+  width: 407px;
+  margin-top: 25px;
+  margin-left: 139px;
+}
+
+.sign-up {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 520px;
+
+  background-image: url("../images/bg/sign-up-bg.jpg");
+
+}
+
+.sign-up .section-title {
+  margin-top: 200px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.sign-up input {
+  width: 290px;
+  padding: 13px 24px;
+}
+
+.form-elements-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-short {
+  width: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-submit {
+  background-image: url("../images/check-icon.png");
 }

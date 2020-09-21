@@ -73,18 +73,17 @@
     </div>
   </section>
   <section class="community">
-    <div class="layout-2-column">
-      <div class="community__content">
-        <div class="avatar">
+      <div class="layout-2-column">
+        <div class="community__content">
           <img src="./assets/images/community/userpic.png" alt="avatar">
-          <h2>our community</h2>
+          <h2 class="section-title section-title_community">our community</h2>
           <p>A hacker is any skilled computer expert that uses their technical knowledge to overcome a problem, but it can also mean a security hacker in common language</p>
         </div>
         <div class="slider">
           <div class="slider-navigation">
-            <span class="navigation__arrow navigation__arrow-right"></span>
             <span class="navigation__arrow navigation__arrow-left"></span>
             <span class="navigation_page-number">1 / 5</span>
+            <span class="navigation__arrow navigation__arrow-right"></span>
           </div>
           <ul class="slider-list">
             <li><img src="./assets/images/community/slider/1.jpg" alt="image 1"></li>
@@ -93,15 +92,16 @@
           </ul>
         </div>
       </div>
-    </div>
   </section>
   <section class="implement">
     <div class="layout-2-column">
-      <div class="content">
-        <h2>Implement right Code</h2>
-        <p>These might be considered part of the programming process, but often the term software development is used for this larger process with the term programming, implementation</p>
-        <div class="implement__button">
-          <button class="button">Learn more</button>
+      <div class="content-wrapper">
+        <div class="content">
+          <h2 class="section-title">Implement right Code</h2>
+          <p>These might be considered part of the programming process, but often the term software development is used for this larger process with the term programming, implementation</p>
+          <div class="implement__button">
+            <button class="button">Learn more</button>
+          </div>
         </div>
       </div>
       <div class="image">
@@ -109,15 +109,19 @@
       </div>
     </div>
   </section>
+
   <section class="sign-up">
-    <h2>sign up for our newsletter</h2>
+    <h2 class="section-title">sign up for our newsletter</h2>
+
     <form action="">
-      <label for="email">
-        <input type="text" id="email" name="emai" placeholder="email">
-        <button>
+      <div class="form-elements-wrapper">
+        <label for="email">
+          <input type="text" id="email" name="emai" placeholder="E-mail">
+        </label>
+        <button class="button button-short">
           <span class="icon icon-submit"></span>
         </button>
-      </label>
+      </div>
     </form>
   </section>
   <section class="download">
