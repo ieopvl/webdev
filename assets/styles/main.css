@@ -439,3 +439,78 @@ h6 {
 
 .button-apple::after { background-image: url("../images/icon-apple.png") }
 .button-android::after { background-image: url("../images/icon-android.png") }
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #000000;
+}
+
+.footer__navigation {
+  margin-left: 160px;
+  margin-right: 328px;
+}
+
+
+.footer-navigation-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.footer-navigation-list a {
+  margin-right: 40px;
+
+  font-family: Roboto, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-navigation-list a:hover {
+  border-bottom: 1px solid #ffffff
+
+}
+
+.footer-navigation-list li {
+  position: relative;
+}
+
+.footer-navigation-list li::after {
+  content: '';
+
+  position: absolute;
+  top: calc(50% - 4px);
+  left: 65px;
+
+  display: block;
+  height: 8px;
+  width: 2px;
+
+  background-color: #4E4E4E;
+}
+
+.footer-navigation-list li:last-child::after {
+  width: 0;
+  height: 0;
+}
+
+.footer__information {
+  margin-left: 434px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #818181;
+}
+
+.footer .logo img {
+  transition: scale 1s linear;
+}
+
+.footer .logo img:hover {
+  transform: scale(1.2, 1.2);
+}
