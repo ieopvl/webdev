@@ -1,12 +1,192 @@
 html {
+  padding: 0;
+  margin: 0;
   font-size: 10px;
 }
 
 body {
+  padding: 0;
+  margin: 0;
   width: 1600px;
+
   color: #ffffff;
-  background: #000;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 1.6rem;
 }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  width: 184px;
+  height: 46px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background: #00AFDB;
+
+  border: 0;
+  transition: background-color 0.5s ease-in;
+}
+
+.button:hover {
+  background-color: #009CC2;
+}
+
+
+
+
+.header {
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*right: 0;*/
+
+  height: 95px;
+  width: 1600px;
+
+  background-color: #000;
+}
+
+.header__navigation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 75px;
+
+
+}
+
+.logo {
+  margin-left: 15px;
+  margin-right: 15px;
+
+  transition: scale 0.2s ease-in;
+}
+
+.navigation li {
+  margin-right: 85px;
+}
+
+.navigation .active,
+.navigation a:hover {
+  font-weight: 500;
+  border-bottom: 1px solid #FFFFFF;
+  opacity: 1;
+}
+
+.navigation .logo:hover {
+  border-bottom: 0;
+  transform: scale(1.2);
+}
+
+.navigation a {
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 140%;
+  color: #FFFFFF;
+  text-align: center;
+
+  opacity: 0.8;
+}
+
+.promo {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  background-image: url("../images/bg/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  margin-bottom: 23px;
+
+  font-size: 6.4rem;
+  font-weight: 700;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+}
+
+.promo__content {
+  margin-top: 135px;
+  margin-bottom: 180px;
+}
+
+.promo__content p {
+  width: 504px;
+  margin: 0 auto 30px auto;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 140%;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 170px;
+
+}
+
+.icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  transition: scale 1s linear;
+}
+
+.icon:hover {
+  transform: scale(1.3);
+}
+
+.icon-mail {  background-image: url("../images/social/gm.svg");}
+.icon-fb {  background-image: url("../images/social/fb.svg");}
+.icon-in {  background-image: url("../images/social/in.svg");}
+.icon-tg {  background-image: url("../images/social/telegram_fff.svg");}
