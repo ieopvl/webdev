@@ -376,3 +376,66 @@ h6 {
 .icon-submit {
   background-image: url("../images/check-icon.png");
 }
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 123px;
+  padding-bottom: 180px;
+
+  background: #F5F6F7;
+
+}
+
+.download .section-title {
+  margin-bottom: 8px;
+}
+
+.download p {
+  width: 480px;
+  margin-bottom: 30px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 140%;
+
+  text-align: center;
+}
+
+.download__buttons {
+  display: flex;
+}
+
+.download__buttons .button {
+  position: relative;
+
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-left: 18px;
+  text-align: left;
+}
+
+.download__buttons .button::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  display: block;
+  width: 59px;
+  height: 46px;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: #009CC2;
+}
+
+.button-apple::after { background-image: url("../images/icon-apple.png") }
+.button-android::after { background-image: url("../images/icon-android.png") }
